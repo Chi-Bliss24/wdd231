@@ -1,0 +1,179 @@
+:root{
+  --primary-color:#2a9d8f;
+  --secondary-color:#e9c46a;
+  --text-color:#333;
+  --bg-color:#f8f9fa;}
+
+
+*{box-sizing:border-box}
+body
+{
+  font-family:'Open Sans',sans-serif;
+  color:var(--text-color);
+  background:var(--bg-color);
+  margin:0;
+  padding:0
+}
+/* Header container */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Logo + title */
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+/* Default menu hidden on mobile */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  background: var(--primary-color);
+  width: 100%;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+nav ul li{
+  border-radius: 10px;
+}
+nav ul li a:hover {
+  background-color: var(--secondary-color);
+  color: black;
+}
+
+/* Hamburger button */
+#menuButton {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: url("images/menu.svg") no-repeat center;
+  background-size: 60%;
+  cursor: pointer;
+}
+
+/* Show menu when active */
+nav.open ul {
+  display: flex;
+}
+
+
+.header{
+  background:white;
+  padding:1.25rem 1rem;
+  border-bottom:4px solid var(--primary-color)
+}
+.header .brand{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  max-width:1100px;
+  margin:0 auto}
+
+.logo{
+  width:64px;
+  height:64px;
+  border-radius:8px;
+  overflow:hidden;background:white;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 2px 6px rgba(0,0,0,0.08)
+}
+.header h1{
+  font-family:'Poppins',sans-serif;
+  font-size:1.75rem;
+  color:var(--primary-color);margin:0
+}
+.nav{
+  max-width:1100px;
+  margin:0 auto;
+  display:flex;
+  justify-content:flex-end;
+  padding:0.5rem 1rem
+}
+.nav button{
+  background:transparent;
+  border:2px solid var(--primary-color);
+  padding:8px;
+  border-radius:6px;
+  margin-left:8px;
+  cursor:pointer
+}
+.main{
+  max-width:1100px;
+  margin:1.25rem auto;
+  padding:0 1rem}
+.controls{
+  display:flex;
+  gap:0.5rem;
+  align-items:center;margin-bottom:1rem
+}
+.controls .toggle{
+  display:inline-flex;align-items:
+  center;gap:0.5rem
+}
+.controls button{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+  background:white;cursor:pointer
+}
+#cards{
+  display:grid;
+  grid-template-columns:1fr;gap:1.25rem}
+
+/* Grid view: cards in multiple columns */
+#cards.grid{
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  align-items:start
+}
+.card{
+  background:white;padding:1.25rem;border-radius:8px;box-shadow:0 6px 20px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:0.5rem;min-height:160px}
+.card img.logo-small{
+  width:100%;height:90px;object-fit:contain;background:#fff;padding:8px;border-radius:6px}
+.card h3{
+  margin:0;color:var(--primary-color);font-size:1.05rem}
+.card p{
+  margin:0;color:#444;font-size:0.95rem}
+.card a{
+  color:var(--primary-color);
+  text-decoration:underline
+  ;font-size:0.9rem}
+
+/* List view style: each item full width row with columns */
+#cards.list{display:block}
+#cards.list .card{display:grid;grid-template-columns:2fr 3fr 1fr 1fr;align-items:center;gap:1rem;padding:1rem;border-radius:0;border-bottom:1px solid rgba(0,0,0,0.04)}
+#cards.list .card img.logo-small{width:120px;height:80px;object-fit:contain;grid-column:1/2}
+#cards.list .card h3{font-size:1rem}
+
+/* Responsive adjustments */
+@media (max-width:600px){
+  #cards.list .card{grid-template-columns:1fr;gap:0.5rem;padding:0.75rem}
+  .nav{justify-content:center}
+}
+
+/* Footer */
+footer{background:var(--primary-color);color:white;padding:1rem;text-align:center;margin-top:2rem}
+.footer-info{max-width:1100px;margin:0 auto}

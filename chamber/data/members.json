@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Idaho Websites",
+    "address": "2115 S Vista Avenue Boise ID 83705",
+    "phone": "(208) 342-9386",
+    "url": "https://idahowebsites.com/",
+    "image": "logo1.svg",
+    "level": 3,
+    "description": "Local web design and hosting."
+  },
+  {
+    "name": "Surge Web Design",
+    "address": "4072 E Arch Drive Meridian ID 83646",
+    "phone": "(208) 631-0640",
+    "url": "https://www.surgewebdesign.com/",
+    "image": "logo2.svg",
+    "level": 3,
+    "description": "Creative digital agency."
+  },
+  {
+    "name": "Graphic Zen",
+    "address": "1788 E Summerplace Court Meridian ID 83646",
+    "phone": "(208) 631-4984",
+    "url": "https://graphiczen.com/",
+    "image": "logo3.svg",
+    "level": 2,
+    "description": "Branding and print design."
+  },
+  {
+    "name": "Peppershock Media",
+    "address": "1215 3rd Street Nampa ID 83651",
+    "phone": "(208) 461-5070",
+    "url": "https://www.peppershock.com/",
+    "image": "logo4.svg",
+    "level": 1,
+    "description": "Marketing and video production."
+  },
+  {
+    "name": "Flash Tech Services",
+    "address": "Star Idaho 83669",
+    "phone": "(208) 488-5810",
+    "url": "https://flashtechnicalservices.com/",
+    "image": "logo5.svg",
+    "level": 1,
+    "description": "IT support and services."
+  },
+  {
+    "name": "Metro Express Car Wash",
+    "address": "1725 E Overland Road Meridian ID 83642",
+    "phone": "(208) 888-4073",
+    "url": "https://www.metroexpresscarwash.com/",
+    "image": "logo6.svg",
+    "level": 2,
+    "description": "Automotive cleaning services."
+  },
+  {
+    "name": "Roaring Springs",
+    "address": "123 Waterpark Lane, Boise ID",
+    "phone": "(208) 555-1212",
+    "url": "https://www.roaringsprings.com/",
+    "image": "logo7.svg",
+    "level": 2,
+    "description": "Family waterpark and attractions."
+  }
+]
