@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1" >
+  <title>Wale Street Commerce - Chamber Directory</title>
+  <meta name="description" content="Local business directory for Wale Street Commerce. Discover vendors, services, and contact details." >
+  <meta name="author" content="Bliss Nwozuzu-Victor" >
+
+  <!-- Favicon (SVG) -->
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml" >
+
+  <!-- Open Graph / Facebook meta -->
+  <meta property="og:title" content="Wale Street Commerce - Chamber Directory" />
+  <meta property="og:description" content="Local business directory for the Wale Street Commerce community." >
+  <meta property="og:url" content="https://chi-bliss24.github.io/wdd231/chamber/directory.html">
+  <meta property="og:image" content="https://chi-bliss24.github.io/wdd231/chamber/images/wale-commerce-logo-removebg-preview.png" >
+  <meta property="og:type" content="website" >
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Poppins:wght@600&display=swap">
+  <link rel="stylesheet" href="styles/normalize.css" >
+  <link rel="stylesheet" href="styles/styles.css" >
+  <link rel="stylesheet" href="styles/large.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <script src="scripts/nav.js" defer></script>
+  <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="brand">
+      <div class="logo"><img src="images/walecommerce-logo1.png" alt="Wale Street Commerce logo" ></div>
+      <div>
+        <h1>Wale Street Commerce</h1>
+        <p class="nav-write-up">Chamber Directory</p>
+      </div>
+    </div>
+      <button id="menuButton" aria-label="Menu">&#9776;</button>
+     <nav id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+  </header>
+
+<main class="container">
+<section class="hero">
+<!-- hero image uses the uploaded file for now -->
+<img src="images/people-volunteer.webp"   alt="Community banner">
+
+
+
+
+    <div class="hero-card">
+        <h2>Welcome to Wale Street Commerce</h2>
+        <p class="muted">Connecting local businesses, promoting community events, and helping commerce thrive in our region. Explore member services, upcoming events, and how to join the chamber.</p>
+        <p>
+        <a class="cta" href="join.html">Join the Chamber</a>
+        <a style="margin-left:12px;color:var(--primary-color);text-decoration:underline" href="#events">See Events</a>
+        </p>
+    </div>
+
+</section>
+
+
+<section id="events" style="margin-top:1.4rem;">
+<div class="grid-3">
+<div class="card">
+<h3>Current Events</h3>
+<p class="muted">Stay connected — upcoming events in our community</p>
+<ul>
+<li><strong>Small Business Mixer</strong> — June 15, 6:00PM at Downtown Pavilion</li>
+<li><strong>Annual Job Fair</strong> — July 2, 9:00AM at Community Center</li>
+<li><strong>Shop Local Weekend</strong> — Aug 22–24 — Specials across member businesses</li>
+</ul>
+<p><a href="events.html">View all events</a></p>
+</div>
+
+
+<div class="card" id="weather-card">
+<h3>Local Weather</h3>
+<div id="weather-current" class="muted">Loading weather…</div>
+<div id="forecast" style="margin-top:1rem;display:flex;gap:.5rem;flex-wrap:wrap"></div>
+<small class="muted">Weather provided by OpenWeatherMap</small>
+</div>
+
+
+<div class="card">
+<h3>Get Involved</h3>
+<p class="muted">Want to promote your business and meet other professionals? Join the chamber and get access to member benefits and visibility.</p>
+<p><a class="cta" href="join.html">Become a Member</a></p>
+</div>
+</div>
+</section>
+
+
+<section style="margin-top:1.6rem;">
+<h3>Member Spotlights</h3>
+<p class="muted">We highlight two or three gold/silver members each time the page loads.</p>
+<div id="spotlights" class="spotlights" aria-live="polite">
+<!-- spotlight cards inserted here by JS -->
+</div>
+</section>
+
+
+</main>
+
+  <footer>
+    <div>
+      <p>
+        <span>
+        10 wale alomo avenue lagos. |
+        </span>
+        
+        <span>
+        info@walscommerce.com |
+        (234)0-804-4567-67
+        </span>
+      </p>
+    </div><br>
+    <div class="footer-info">
+      <p><strong>Bliss Nwozuzu-Victor</strong> | Course: WDD 231 | <span id="lastModified"></span> | <span id="copyright"></span></p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>

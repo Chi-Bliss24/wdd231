@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        background-color: #f0f8ff;
+        color: #333;
+    }
+
+    h1 {
+        color: #2c3e50;
+    }
+
+    main {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    figure {
+        margin: 20px 0;
+        text-align: center;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    footer {
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #777;
+        text-align: center;
+    }
+</style>
+
+    <h1>OpenWeatherMap.org API Test</h1>
+<main>
+  <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+  <figure>
+    <img id="weather-icon" src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+</main>
+<footer>
+  Bliss Nwozuzu-Victor | OpenWeatherMap.org | CC BY-SA 4.0
+</footer>
+</body>
+</html>
