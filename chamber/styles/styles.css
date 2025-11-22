@@ -274,7 +274,25 @@ nav.open ul {
     transform: translateY(-2px);
     background-color: #f0d48b;
 }
+.cta-events {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background-color 0.2s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 
+}
+.cta-events:hover {
+    transform: translateY(-2px);
+    background-color: #186960;
+}
+#events{
+  margin-top:1.4rem;
+}
 /* --- MAIN CONTENT GRID (Events, Weather, Join) --- */
 .grid-3 {
     display: grid;
@@ -284,6 +302,12 @@ nav.open ul {
     margin-top: 2rem;
 }
 
+#forecast{
+  margin-top:1rem;
+  display:flex;
+  gap:.5rem;
+  flex-wrap:wrap
+}
 .card {
     background: white;
     padding: 1.5rem;
@@ -310,6 +334,12 @@ nav.open ul {
     display: inline-block;
 }
 
+.sec-spotlight{
+    margin-top:1.6rem;
+}
+.sec-spotlight > h3,p{
+  margin-left: 10px;
+}
 /* --- SPOTLIGHTS --- */
 .spotlights {
     display: grid;
