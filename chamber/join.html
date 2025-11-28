@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to join Wale Street Commerce — membership application form.">
+    <title>Join Wale Street Commerce</title>
+    <link rel="stylesheet" href="styles/join.css">
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <img src="images/walecommerce-logo1.png" alt="Wale Street Commerce logo">
+        <div>
+          <h1>Wale Street Commerce</h1>
+          <div class="muted">Chamber Membership</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <div class="card">
+        <h2>Join the Chamber</h2>
+        <p class="muted">Complete the form to apply for membership. Required fields are marked and will appear on the confirmation page.</p>
+
+        <form method="get" action="thankyou.html" id="joinForm">
+          <div class="two-col">
+            <label>First name
+              <input type="text" name="firstName" title="Applicant first name" autocomplete="given-name" required>
+            </label>
+
+            <label>Last name
+              <input type="text" name="lastName" title="Applicant last name" autocomplete="family-name" required>
+            </label>
+          </div>
+
+          <label>Organizational title
+            <input type="text" name="orgTitle" title="Your title at the organization (min 7 characters, letters, hyphens and spaces only)" autocomplete="organization-title" pattern="^[A-Za-z\-\s]{7,}$" placeholder="e.g. Executive Director" required>
+          </label>
+
+          <label>Email address
+            <input type="email" name="email" title="Email address" autocomplete="email" placeholder="name@example.com" required>
+          </label>
+
+          <label>Mobile phone
+            <input type="tel" name="mobile" title="Mobile phone" autocomplete="tel" placeholder="(555) 555-5555" required>
+          </label>
+
+          <label>Business / Organization name
+            <input type="text" name="organization" title="Business or organization name" autocomplete="organization" required>
+          </label>
+
+          <label>Membership level
+            <select name="membership" title="Choose membership level" required>
+              <option value="np">NP Membership (non-profit)</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label>Business / Organization description
+            <textarea name="description" title="Describe your business or organization" rows="4"></textarea>
+          </label>
+
+          <!-- hidden timestamp to be filled by JS -->
+          <input type="hidden" id="timestamp" name="timestamp" value="">
+
+          <p><input type="submit" value="Submit Application"></p>
+        </form>
+      </div>
+    </section>
+
+    <aside>
+      <div class="levels">
+        <div class="level-card card" data-level="np">
+          <h4>NP Membership</h4>
+          <p class="muted">No fee. For nonprofit organizations.</p>
+          <p><a href="#" class="more" data-target="modal-np">Learn More</a></p>
+        </div>
+
+        <div class="level-card card" data-level="bronze">
+          <h4>Bronze Membership</h4>
+          <p class="muted">Entry-level benefits including event invites.</p>
+          <p><a href="#" class="more" data-target="modal-bronze">Learn More</a></p>
+        </div>
+
+        <div class="level-card card" data-level="silver">
+          <h4>Silver Membership</h4>
+          <p class="muted">Includes spotlight features and discounts.</p>
+          <p><a href="#" class="more" data-target="modal-silver">Learn More</a></p>
+        </div>
+
+        <div class="level-card card" data-level="gold">
+          <h4>Gold Membership</h4>
+          <p class="muted">Premium sponsorship, homepage promotion, priority support.</p>
+          <p><a href="#" class="more" data-target="modal-gold">Learn More</a></p>
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Modals -->
+  <div id="modal-np" class="modal" role="dialog" aria-hidden="true" aria-labelledby="np-title">
+    <div class="dialog" role="document">
+      <button class="close" aria-label="Close modal">✕</button>
+      <h3 id="np-title">NP Membership Benefits</h3>
+      <p>Access to chamber networking events, nonprofit resource group, and listing in the directory.</p>
+    </div>
+  </div>
+
+  <div id="modal-bronze" class="modal" role="dialog" aria-hidden="true" aria-labelledby="bronze-title">
+    <div class="dialog" role="document">
+      <button class="close" aria-label="Close modal">✕</button>
+      <h3 id="bronze-title">Bronze Membership Benefits</h3>
+      <p>Includes NP benefits plus event invitations and member-only newsletters.</p>
+    </div>
+  </div>
+
+  <div id="modal-silver" class="modal" role="dialog" aria-hidden="true" aria-labelledby="silver-title">
+    <div class="dialog" role="document">
+      <button class="close" aria-label="Close modal">✕</button>
+      <h3 id="silver-title">Silver Membership Benefits</h3>
+      <p>Includes Bronze benefits plus spotlight advertising, member discounts, and training access.</p>
+    </div>
+  </div>
+
+  <div id="modal-gold" class="modal" role="dialog" aria-hidden="true" aria-labelledby="gold-title">
+    <div class="dialog" role="document">
+      <button class="close" aria-label="Close modal">✕</button>
+      <h3 id="gold-title">Gold Membership Benefits</h3>
+      <p>All Silver benefits plus premium sponsorships, homepage promotion, and priority event placement.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <p>
+        <span>
+        10 wale alomo avenue lagos. |
+        </span>
+        
+        <span>
+        info@walscommerce.com |
+        (234)0-804-4567-67
+        </span>
+      </p>
+    </div><br>
+    <div class="footer-info">
+      <p><strong>Bliss Nwozuzu-Victor</strong> | Course: WDD 231 | <span id="lastModified"></span> | <span id="copyright"></span></p>
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

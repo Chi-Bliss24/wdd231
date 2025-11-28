@@ -1,5 +1,12 @@
 // script.js - fetch members and display as grid or list
 
+// Footer dates
+document.addEventListener('DOMContentLoaded', () => {
+  const lm = new Date(document.lastModified);
+  document.getElementById('lastModified').textContent = 'Last Modified: ' + lm.toLocaleString();
+  document.getElementById('copyright').textContent = new Date().getFullYear();
+
+});
 
 
 const url = 'data/members.json';
@@ -57,10 +64,4 @@ function setListView(){
 gridBtn.addEventListener('click', setGridView);
 listBtn.addEventListener('click', setListView);
 
-// Footer dates
-document.addEventListener('DOMContentLoaded', () => {
-  const lm = new Date(document.lastModified);
-  document.getElementById('lastModified').textContent = 'Last Modified: ' + lm.toLocaleString();
-  document.getElementById('copyright').textContent = new Date().getFullYear();
-  getMembers();
-});
+getMembers();
