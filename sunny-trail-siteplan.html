@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Trail Dog Walking Service — Site Plan</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary: #2E8B57; /* primary green for headings, accents */
+      --accent:  #FFD166; /* sunny yellow for buttons, highlights */
+      --muted:   #6B6B6B; /* secondary text */
+      --bg:      #ffffff; /* page background */
+      --card:    #F6F8F5; /* subtle card background */
+      --maxw:    900px;
+      font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color: #222;
+    }
+
+    /* Page layout */
+    body{background:var(--bg); margin:24px; display:flex; justify-content:center}
+    .wrap{width:100%; max-width:var(--maxw)}
+    header{display:flex; gap:16px; align-items:center}
+    .logo{width:64px; height:64px; border-radius:12px; background:linear-gradient(135deg,var(--accent),var(--primary)); display:flex; align-items:center; justify-content:center; color:#222; font-weight:700; font-family:'Poppins';}
+    h1{color:var(--primary); font-family:'Poppins'; margin:0}
+    h2{color:var(--primary); font-family:'Poppins'; margin:18px 0 8px}
+    p.lead{color:var(--muted); margin-top:4px}
+
+    section.card{background:var(--card); padding:14px 18px; border-radius:10px; margin-top:18px}
+    ul{margin:8px 0 0 1.1rem}
+    .swatches{display:flex; gap:12px; align-items:center}
+    .swatch{width:72px; height:48px; border-radius:6px; box-shadow:0 1px 0 rgba(0,0,0,0.06); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600}
+
+    /* Typography preview */
+    .type-sample{border-radius:8px; padding:12px; background:#fff; border:1px dashed #eee}
+    .type-sample h3{font-family:'Poppins'; margin:0}
+
+    /* Wireframe visuals */
+    .mobile-view{width:50%; border:1px solid #ddd; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    .desktop-view{width:80%; border:1px solid #ddd; border-radius:6px; box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+    
+    /* Responsive small preview */
+    @media (max-width:480px){ .wrap{padding:0 10px} }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <div class="logo">ST</div>
+      <div>
+        <h1>Sunny Trail Dog Walking Service — Site Plan</h1>
+       
+        
+      </div>
+    </header>
+
+    <!-- Site identity -->
+    <section class="card" aria-labelledby="site-name">
+      <h2 id="site-name">Site Name</h2>
+      <p><strong>Sunny Trail Dog Walking Service</strong></p>
+      <p class="note">Reason: clear, friendly, and evokes outdoor play and walking — easy to remember for local pet owners. Domain: <em>sunnytraildogs.com</em></p>
+    </section>
+
+    <!-- Purpose -->
+    <section class="card" aria-labelledby="purpose">
+      <h2 id="purpose">Site Purpose</h2>
+      <ul>
+        <li>Introduce Sunny Trail: who we are and why pet owners should trust us.</li>
+        <li>Describe services & pricing for walk types and play sessions.</li>
+        <li>Provide a simple contact/booking page with hours, phone, and a short inquiry form.</li>
+      </ul>
+    </section>
+
+    <!-- Audience scenarios -->
+    <section class="card" aria-labelledby="scenarios">
+      <h2 id="scenarios">Visitor Scenarios (examples)</h2>
+      <ol>
+        <li><strong>New local dog owner:</strong> "What packages do you offer for a medium‑energy dog, and how much will weekly walks cost?"</li>
+        <li><strong>Busy professional:</strong> "How can I quickly book a mid‑day walk or contact you if my schedule changes?"</li>
+        <li><strong>Safety‑conscious owner:</strong> "Are you insured, and what is your emergency or cancelation policy?"</li>
+      </ol>
+    </section>
+
+    <!-- Pages/content outline -->
+    <section class="card" aria-labelledby="pages">
+      <h2 id="pages">Pages & Content Outline</h2>
+      <ul>
+        <li><strong>Home</strong> — Short hero intro, three value points (experienced handlers, insured, local trails), testimonials, call to action to Book.</li>
+        <li><strong>Services & Pricing</strong> — Packages (30‑min walk, 60‑min hike, off‑leash play), pricing table, add‑ons (multiple dogs, puppy socialization), FAQs.</li>
+        <li><strong>Booking / Contact</strong> — Contact form (name, dog info, preferred times), phone number, service area map, business hours, cancellation policy.</li>
+      </ul>
+    </section>
+
+    <!-- Color Scheme -->
+    <section class="card" aria-labelledby="colors">
+      <h2 id="colors">Color Scheme</h2>
+      <div class="swatches">
+        <div class="swatch" style="background:var(--primary); color:#fff">#2E8B57<br><small>Primary</small></div>
+        <div class="swatch" style="background:var(--accent); color:#222">#FFD166<br><small>Accent</small></div>
+        <div class="swatch" style="background:var(--card); color:#222">#F6F8F5<br><small>Card</small></div>
+      </div>
+      <ul>
+        <li><strong>Primary (var(--primary)):</strong> headings, primary buttons, CTAs, logo accent.</li>
+        <li><strong>Accent (var(--accent)):</strong> secondary buttons, highlights, icons, badges.</li>
+        <li><strong>Card / background:</strong> panels, content cards and wireframe placeholders for calm contrast.</li>
+      </ul>
+      <p class="note">This document uses the same color variables and demonstrates them in the swatches and wireframe areas.</p>
+    </section>
+
+    <!-- Typography -->
+    <section class="card" aria-labelledby="typography">
+      <h2 id="typography">Typography</h2>
+      <p>No fewer than 1 and no more than 3 fonts. Selected:</p>
+      <ul>
+        <li><strong>Poppins</strong> — headings (H1, H2, H3) for friendly, rounded headings.</li>
+        <li><strong>Open Sans</strong> — body copy and small UI text for legibility on screens.</li>
+      </ul>
+      <div class="type-sample">
+        <h3>Heading sample (Poppins)</h3>
+        <p style="margin-top:8px">Body sample (Open Sans): A short paragraph describing the service and keeping copy concise and scannable.</p>
+      </div>
+    </section>
+
+    <!-- Wireframes -->
+    <section class="card" aria-labelledby="wireframe">
+      <h2 id="wireframe">Home Page Wireframe (mobile & desktop)</h2>
+      <p class="note">Simple visual sketches below — these are conceptual layouts (mobile stacked and desktop with split content).</p>
+
+      <div class="wireframe" role="img" aria-label="wireframe examples">
+        <!-- Mobile -->
+        <div class="wf" aria-hidden="false">
+          <img src="images/wireframe-small.png" alt="" class="mobile-view" >
+        </div>
+
+        <!-- Desktop -->
+        <div class="wf">
+          <img src="images/wireframe-large.png" alt="" class="desktop-view" >
+      </div>
+      </div>
+      
+    </section>
+
+    <!-- CSS note -->
+    <section class="card" aria-labelledby="css">
+      <h2 id="css">CSS & Styling Notes</h2>
+      <ul>
+        <li>Use the color variables shown above across all pages for consistency.</li>
+        <li>Keep a small set of utility classes for spacing and buttons (e.g., .btn, .btn--primary, .container).</li>
+        <li>Layout: responsive mobile‑first using flexible containers and a max width of <code>var(--maxw)</code>.</li>
+      </ul>
+    </section>
+
+   \
+   
+  </main>
+</body>
+</html>
