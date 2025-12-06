@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Discover — Wale Street Commerce</title>
+  <meta name="description" content="Discover the region — highlights, attractions, and places of interest to visitors and prospective members.">
+  <meta name="author" content="STUDENT NAME">
+  <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="styles/small.css">
+  <!-- medium and large CSS split as requested -->
+  <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width:641px) and (max-width:1024px)">
+  <link rel="stylesheet" href="styles/large.css" media="screen and (min-width:1025px)">
+</head>
+<body>
+  <header>
+    <div class="container topbar">
+      <div class="brand">
+        <img src="images/walecommerce-logo1.png" alt="Wale Street Commerce logo">
+        <div>
+          <h1>Wale Street Commerce</h1>
+          <div class="muted">Discover the region</div>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html">Discover</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>Discover the area</h2>
+        <p class="muted">Highlighting places, culture, and business opportunities across the region — curated for prospective members and visitors.</p>
+      </div>
+      <div class="visitor-msg-container">
+        <div id="visitorMessage" class="visitor-msg" role="status" aria-live="polite">Loading message…</div>
+      </div>
+    </section>
+
+    <section>
+      <div id="discoverGrid" class="discover-grid">
+        <!-- Cards will be injected here by scripts/discover.js -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <div class="muted">&copy; <span id="year"></span> Wale Street Commerce — All rights reserved.</div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="scripts/discover.js"></script>
+</body>
+</html>

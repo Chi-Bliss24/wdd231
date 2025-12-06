@@ -337,6 +337,22 @@ footer {
 main.thankyou-main {
   padding: 2rem 0;
 }
+
+/* Discover page styles */
+
+/* Visitor message box */
+.visitor-msg-container {
+  min-width: 220px;
+  text-align: right;
+}
+
+.visitor-msg {
+  background: linear-gradient(180deg, rgba(255,255,255,0.95), #fff);
+  padding: .8rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 6px solid var(--secondary-color);
+}
 footer{
     color:#fff;
 }
