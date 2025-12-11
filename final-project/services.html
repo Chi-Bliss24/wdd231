@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Trail — Services & Pricing</title>
+  <meta name="description" content="Pricing and packages for Sunny Trail's 30-min walks, 60-min hikes, off-leash play, puppy socialization and add-ons.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand-link" href="index.html">Sunny Trail</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Services & Pricing</h1>
+    <p>Choose the right package for your dog's needs. Prices shown are per walk/session.</p>
+
+    <section class="pricing" aria-labelledby="pricing-heading">
+      <h2 id="pricing-heading">Packages</h2>
+      <table class="pricing-table" aria-describedby="pricing-desc">
+        <caption id="pricing-desc">Standard packages with base pricing.</caption>
+        <thead>
+          <tr><th>Package</th><th>Duration</th><th>Price</th><th>Details</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>30‑minute walk</td><td>30 min</td><td>$18</td><td>Neighborhood leash walk</td></tr>
+          <tr><td>60‑minute hike</td><td>60 min</td><td>$30</td><td>Trail hike, more exercise</td></tr>
+          <tr><td>Off‑leash play</td><td>45–60 min</td><td>$28</td><td>Fenced play area or controlled off‑leash</td></tr>
+        </tbody>
+      </table>
+
+      <h3>Add‑ons</h3>
+      <ul>
+        <li>Additional dog (same household): +$8</li>
+        <li>Puppy socialization (under 6 mo): +$6</li>
+        <li>Evening pickup/dropoff window: +$5</li>
+      </ul>
+    </section>
+
+    <section id="listings" class="container">
+      <h2>All available sessions</h2>
+      <div id="service-list" class="card-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="faqs" class="faqs">
+      <h2>FAQs</h2>
+      <dl>
+        <dt>Are you insured?</dt>
+        <dd>Yes — we carry professional liability and bonding. Details available on request.</dd>
+        <dt>What is your cancellation policy?</dt>
+        <dd>Cancel 24 hours prior for full refund. Within 24 hours, a 50% fee applies except for emergencies.</dd>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year2"></span> Sunny Trail Dog Walking Service</p>
+  </footer>
+
+  <div id="modal-root"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

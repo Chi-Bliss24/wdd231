@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Trail — Booking</title>
+  <meta name="description" content="Quickly book a walk or contact Sunny Trail. Fill in your dog details and preferred times.">
+  <meta name="author" content="Your Name">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/booking.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand-link" href="index.html">Sunny Trail</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1>Book a Walk</h1>
+    <p>If you need immediate changes, please call: <a href="tel:+1234567890">(123) 456‑7890</a></p>
+
+    <form id="booking-form" action="form-action.html" method="get">
+      <fieldset>
+        <legend>Contact & Dog information</legend>
+        <label for="name">Your full name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" required>
+
+        <label for="dogname">Dog's name</label>
+        <input id="dogname" name="dogname" type="text" required>
+
+        <label for="breed">Breed (optional)</label>
+        <input id="breed" name="breed" type="text">
+
+        <label for="package">Preferred package</label>
+        <select id="package" name="package">
+          <option value="30">30-minute walk</option>
+          <option value="60">60-minute hike</option>
+          <option value="offleash">Off-leash play</option>
+        </select>
+
+        <label for="times">Preferred days/times</label>
+        <textarea id="times" name="times" rows="3" placeholder="e.g. Mon, Wed 12:00-13:00"></textarea>
+
+        <label for="notes">Any special instructions or health notes</label>
+        <textarea id="notes" name="notes" rows="3"></textarea>
+
+        <div class="form-actions">
+          <button class="btn primary" type="submit">Submit Booking</button>
+          <button class="btn outline" type="button" id="save-pref">Save preference</button>
+        </div>
+      </fieldset>
+    </form>
+
+    <section class="service-area">
+      <h2>Service Area</h2>
+      <p>We serve the neighborhoods within a 10‑mile radius of downtown. If you are outside the area, call us for special arrangements.</p>
+      <div class="map-placeholder" role="img" aria-label="Service area map">Map placeholder</div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year3"></span> Sunny Trail Dog Walking Service</p>
+  </footer>
+
+  <div id="modal-root"></div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
+```
+
+---
+

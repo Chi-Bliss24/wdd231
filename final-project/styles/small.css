@@ -1,0 +1,342 @@
+
+:root {
+  --primary: #2E8B57; /* green */
+  --accent: #FFD166;  /* warm accent */
+  --card: #F6F8F5;    /* card background */
+  --text: #243238;
+  --max-width: 1100px;
+}
+
+
+/* ========================================
+   Reset & Base Styles
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  background: var(--accent);
+  padding: 0.5rem;
+}
+
+
+/* ========================================
+   Header & Navigation
+   ======================================== */
+
+.site-header {
+  background: white;
+  border-bottom: 1px solid #e6ece8;
+}
+
+.header-grid {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.brand h1 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.tagline {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #4b5e52;
+}
+
+.nav-toggle {
+  background: none;
+  border: 0;
+  display: block;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 28px;
+  height: 2px;
+  background: var(--text);
+  position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--text);
+}
+
+.hamburger::before {
+  top: -8px;
+}
+
+.hamburger::after {
+  top: 8px;
+}
+
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+.primary-nav a {
+  text-decoration: none;
+  color: var(--text);
+}
+
+.primary-nav a:hover,
+.primary-nav a.active {
+  color: var(--primary);
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+  background: linear-gradient(180deg, #fff 0%, #f9faf9 100%);
+  padding: 2rem 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-copy h2 {
+  margin-top: 0;
+}
+
+.hero-card {
+  background: var(--card);
+  border-radius: 10px;
+  padding: 1.25rem;
+  min-height: 160px;
+}
+.hero-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ========================================
+   Values Section
+   ======================================== */
+
+.value-list {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.value-list li {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+}
+
+
+/* ========================================
+   Card Grid
+   ======================================== */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e8efe9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #246b45;
+}
+.btn.outline {
+  background: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+.btn.outline:hover {
+  border: 1px solid;
+  background: var(--accent);
+  color: white;
+}
+
+
+/* ========================================
+   Footer
+   ======================================== */
+
+.site-footer {
+  background: #fff;
+  border-top: 1px solid #e6ece8;
+  padding: 1rem;
+}
+
+
+/* ========================================
+   Accessibility Helpers
+   ======================================== */
+
+.sr-only {
+  position: absolute;
+  left: -9999px;
+}
+
+
+/* ========================================
+   Tables
+   ======================================== */
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 0.5rem;
+  border: 1px solid #e6ece8;
+}
+
+
+/* ========================================
+   Modals
+   ======================================== */
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 700px;
+  width: 95%;
+}
+
+
+/* ========================================
+   Utility Classes
+   ======================================== */
+
+.map-placeholder {
+  background: #f0f3f1;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.swatch {
+  height: 120px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 8px;
+}
+
+
+/* ========================================
+   Media Queries
+   ======================================== */
+
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .primary-nav.open {
+    display: block;
+  }
+
+  .primary-nav ul {
+    flex-direction: column;
+  }
+}
+
+
+/* --- CSS for index.html --- */

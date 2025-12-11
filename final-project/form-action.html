@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Booking Confirmed — Sunny Trail</title>
+  <meta name="description" content="Your booking has been received and confirmed.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/form-action.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand-link" href="index.html">Sunny Trail</a>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <div class="confirmation-header">
+      <div class="success-icon">✓</div>
+      <h1>Booking Received!</h1>
+      <p>Thank you for choosing Sunny Trail</p>
+    </div>
+
+    <div class="confirmation-message">
+      <h2>Your Booking Has Been Confirmed</h2>
+      <p>We've received your booking request and will review your dog's details shortly. A member of our team will contact you <span class="highlight">within 24 hours</span> to confirm your preferred times and discuss any special requirements for your pup.</p>
+      <p>We're excited to meet your furry friend and provide the best walking experience possible!</p>
+    </div>
+
+    <div id="output" class="data-summary">
+      <h3>Booking Details</h3>
+    </div>
+
+    <div class="cta-section">
+      <p>Questions? Call us at <a href="tel:+1234567890" class="highlight">(123) 456‑7890</a></p>
+      <a href="index.html" class="btn">Return to Home</a>
+      <a href="services.html" class="btn secondary">Browse Services</a>
+    </div>
+  </main>
+
+  <footer class="site-footer container">
+    <p>&copy; <span id="year"></span> Sunny Trail Dog Walking Service</p>
+  </footer>
+
+  <div id="modal-root"></div>
+
+  <script type="module" src="scripts/main.js" defer></script>
+  <script>
+    // show POST or GET data — for static hosting, form will usually be GET; if POST not available we'll show query string
+    function parseQuery(q) {
+      const params = new URLSearchParams(q);
+      const entries = {};
+      for (const [k, v] of params) entries[k] = v;
+      return entries;
+    }
+    const query = location.search.replace(/^\?/, '');
+    const data = parseQuery(query);
+    const out = document.getElementById('output');
+    if (Object.keys(data).length === 0) {
+      const empty = document.createElement('p');
+      empty.className = 'empty-state';
+      empty.textContent = 'No form data captured. If you submitted via our booking form, your details have been securely received.';
+      out.appendChild(empty);
+    } else {
+      const dl = document.createElement('dl');
+      for (const k of Object.keys(data)) {
+        const dt = document.createElement('dt'); 
+        dt.textContent = k.charAt(0).toUpperCase() + k.slice(1).replace(/([A-Z])/g, ' $1');
+        const dd = document.createElement('dd'); 
+        dd.textContent = data[k];
+        dl.appendChild(dt); 
+        dl.appendChild(dd);
+      }
+      out.appendChild(dl);
+    }
+  </script>
+</body>
+</html>
+```

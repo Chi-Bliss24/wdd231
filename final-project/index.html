@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sunny Trail Dog Walking Service — Home</title>
+  <meta name="description" content="Sunny Trail provides insured, local dog walking and play sessions on nearby trails. Experienced handlers and flexible booking for busy pet owners.">
+  <meta name="author" content="Your Name">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sunny Trail Dog Walking Service">
+  <meta property="og:description" content="Insured local dog walking and off-leash play in neighborhood trails.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/small.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-grid">
+      <div class="brand">
+        <a href="index.html" aria-label="Sunny Trail Home">
+          <svg width="48" height="48" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <circle cx="12" cy="12" r="10" fill="var(--primary)"></circle>
+            <path d="M6 12c1-3 6-5 8-6 2 1 6 3 6 6s-4 5-6 6c-2-1-7-3-8-6z" fill="white" opacity="0.95"></path>
+          </svg>
+        </a>
+        <div class="brand-text">
+          <h1>Sunny Trail</h1>
+          <p class="tagline">Local walks • Insured handlers • Happy dogs</p>
+        </div>
+      </div>
+      <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="booking.html">Booking</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h2>Trusted, friendly dog walking in your neighborhood</h2>
+          <p>Daily walks, hikes, and off‑leash play sessions that keep your dog healthy and happy. Fully insured handlers and local trail knowledge.</p>
+          <p class="hero-ctas">
+            <a class="btn primary" href="booking.html">Book a Walk</a>
+            <a class="btn outline" href="services.html">View Services & Pricing</a>
+          </p>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <img src="images/side-view-woman-playing-with-her-dog-park.webp" alt="" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section class="values container">
+      <h3 class="sr-only">Why Sunny Trail</h3>
+      <ul class="value-list">
+        <li>
+          <h4>Experienced Handlers</h4>
+          <p>All walkers are background-checked, trained in dog handling, and certified in pet first aid.</p>
+        </li>
+        <li>
+          <h4>Fully Insured</h4>
+          <p>We carry liability insurance for peace of mind and follow safety-first protocols.</p>
+        </li>
+        <li>
+          <h4>Local Trails</h4>
+          <p>Know the best routes for energy levels — from calm neighborhood strolls to playful off‑leash hikes.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="testimonials container">
+      <h2>Happy pet owners</h2>
+      <blockquote>
+        "Sunny Trail has been a lifesaver — my Bella loves the hikes and always comes home tired and happy!" — Maria R.
+      </blockquote>
+      <p><a class="link" href="services.html#faqs">See our FAQs</a></p>
+    </section>
+
+    <section class="featured container">
+      <h2>Popular walks</h2>
+      <div id="featured-list" class="card-grid" aria-live="polite">
+        <!-- JS will populate featured items from data/services.json -->
+      </div>
+      <p><a class="btn" href="services.html">Browse all services</a></p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer container" id="contact">
+    <div>
+      <h3>Contact & Booking</h3>
+      <p>Phone: <a href="tel:+1234567890">(123) 456‑7890</a></p>
+      <p>Hours: Mon–Sat 7:00–19:00</p>
+      <p><a href="form-action.html">Attributions / Sources</a></p>
+      <p>&copy; <span id="year"></span> Sunny Trail Dog Walking Service</p>
+    </div>
+  </footer>
+
+  <div id="modal-root"></div>
+
+  <script type="module" src="scripts/main.js" defer></script>
+  <script src="scripts/data.js" defer></script>
+</body>
+</html>

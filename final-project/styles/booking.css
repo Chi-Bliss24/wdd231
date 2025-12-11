@@ -1,0 +1,214 @@
+/* ========================================
+   Booking Page Styles
+   ======================================== */
+
+main {
+  min-height: calc(100vh - 200px);
+}
+
+main h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: var(--text);
+}
+
+main > p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+
+/* ========================================
+   Form Styling
+   ======================================== */
+
+form {
+  background: var(--card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+label:first-child {
+  margin-top: 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d0d7d3;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--text);
+  background: white;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(46, 139, 87, 0.1);
+}
+
+textarea {
+  resize: vertical;
+  font-family: inherit;
+}
+
+select {
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn.primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #1d5a39;
+  box-shadow: 0 4px 8px rgba(46, 139, 87, 0.2);
+}
+
+.btn.primary:active {
+  transform: scale(0.98);
+}
+
+.btn.outline {
+  background: white;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn.outline:hover {
+  background: rgba(46, 139, 87, 0.05);
+}
+
+.btn.outline:active {
+  transform: scale(0.98);
+}
+
+
+/* ========================================
+   Service Area Section
+   ======================================== */
+
+.service-area {
+  margin-top: 2rem;
+}
+
+.service-area h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.service-area p {
+  margin-bottom: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.map-placeholder {
+  background: linear-gradient(135deg, #e8f1ed 0%, #f6f8f5 100%);
+  padding: 4rem 1rem;
+  border-radius: 8px;
+  text-align: center;
+  color: #666;
+  font-weight: 500;
+  border: 2px dashed #d0d7d3;
+}
+
+
+/* ========================================
+   Media Queries
+   ======================================== */
+
+@media (min-width: 641px) {
+  main h1 {
+    font-size: 2rem;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  legend {
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-actions {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    flex: 0 1 auto;
+  }
+
+  .map-placeholder {
+    padding: 6rem 2rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  form {
+    max-width: 700px;
+    padding: 2.5rem;
+  }
+
+  .service-area {
+    max-width: 900px;
+  }
+}

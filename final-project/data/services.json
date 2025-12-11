@@ -1,0 +1,17 @@
+[
+  {"id":1,"title":"30-minute walk","duration":"30 min","price":"$18","energy":"medium","description":"A brisk neighborhood leash walk suitable for most adult dogs."},
+  {"id":2,"title":"60-minute hike","duration":"60 min","price":"$30","energy":"high","description":"Trail hike with varied terrain and more exercise for energetic dogs."},
+  {"id":3,"title":"Off-leash play","duration":"45-60 min","price":"$28","energy":"high","description":"Supervised off-leash play in secure, fenced areas or controlled trails."},
+  {"id":4,"title":"Puppy socialization","duration":"30 min","price":"$22","energy":"medium","description":"Gentle supervised play to build social skills for puppies under 6 months."},
+  {"id":5,"title":"Senior stroll","duration":"30 min","price":"$18","energy":"low","description":"Calm, restorative walks tailored for older dogs with low energy needs."},
+  {"id":6,"title":"Double walk (2 dogs)","duration":"30 min","price":"$26","energy":"medium","description":"Leash walks for two dogs from the same household (discounted add-on)."},
+  {"id":7,"title":"Weekend hike","duration":"90 min","price":"$45","energy":"high","description":"Long weekend hikes for highly active dogs who need extra exercise."},
+  {"id":8,"title":"Fetch & play session","duration":"30 min","price":"$20","energy":"high","description":"Special session focused on fetch, recall, and play in a safe area."},
+  {"id":9,"title":"Behavior walk","duration":"30 min","price":"$25","energy":"medium","description":"Walks with focused reinforcement for leash manners and basic commands."},
+  {"id":10,"title":"Holiday visit","duration":"15-20 min","price":"$15","energy":"low","description":"Short check-in visits for feeding or potty breaks on holidays."},
+  {"id":11,"title":"Extended play","duration":"120 min","price":"$70","energy":"very high","description":"Large-group play events and long off-leash park sessions."},
+  {"id":12,"title":"Intro meet & greet","duration":"15 min","price":"Free","energy":"low","description":"Quick meet to introduce handler and go over notes before first booking."},
+  {"id":13,"title":"Medication administration","duration":"10 min","price":"$8","energy":"low","description":"Administer medications per owner instructions during a visit."},
+  {"id":14,"title":"Puppy training add-on","duration":"15 min","price":"$12","energy":"medium","description":"Focused short training sessions for puppies to reinforce good habits."},
+  {"id":15,"title":"Evening dropoff/pickup","duration":"varies","price":"$12","energy":"low","description":"Evening window for pickup and dropoff, convenient for busy owners."}
+]
